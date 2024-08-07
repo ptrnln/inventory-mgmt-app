@@ -255,7 +255,6 @@ export function useUIContext() {
 
 async function getUserByCredential(credential) {
     // fetch user by email or username
-    debugger
     const snapshot = query(
         collection(firestore, 'users'), 
         or(
